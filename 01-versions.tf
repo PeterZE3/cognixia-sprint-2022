@@ -15,15 +15,7 @@ terraform {
       version = ">= 3.0"
     }    
   }
-# Terraform State Storage to Azure Storage Container
-  backend "azurerm" {
-    resource_group_name   = "sprint2022"
-    storage_account_name  = "storage2022sprint"
-    container_name        = "storagecontainer"
-    key                   = "terraform.tfstate"
-  }  
 }
-
 # Provider Block
 provider "azurerm" {
  features {}          
