@@ -1,6 +1,6 @@
 # Config Storage account
 resource "azurerm_storage_account" "storage2022sprint" {
-  name                     = "storage2022sprint"
+  name                     = "peterze3teststorage"
   resource_group_name      = azurerm_resource_group.wordpress-rg.name
   location                 = azurerm_resource_group.wordpress-rg.location
   account_tier             = "Standard"
@@ -20,5 +20,5 @@ resource "azurerm_storage_container" "storagecontainer" {
 */
 resource "azurerm_storage_queue" "queue" {
   name                 = "messages"
-
+  storage_account_name = azurerm_storage_account.storage2022sprint.name
 }

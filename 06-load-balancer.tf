@@ -30,3 +30,9 @@ resource "azurerm_lb_backend_address_pool" "backend_address_pool" {
 #     virtual_network_id = azurerm_virtual_network.vnet.id   
 #     ip_address = "10.0.0.1"
 # }
+
+# resource "azurerm_network_interface_backend_address_pool_association" "web_nic_lb_associate" {
+#   network_interface_id    = azurerm_network_interface.web_linuxvm_nic.id
+#   ip_configuration_name   = azurerm_network_interface.web_linuxvm_nic.ip_configuration[0].name
+#   backend_address_pool_id = azurerm_lb_backend_address_pool.backend_address_pool.id
+# }

@@ -31,7 +31,7 @@ variable "mysql_db_schema" {
 
 # Resource-1: Azure MySQL Server
 resource "azurerm_mysql_server" "mysql_server" {
-  name                = "database12245w" #needs to be randomized
+  name                = "database636342" #needs to be randomized
   location            = azurerm_resource_group.wordpress-rg.location
   resource_group_name = azurerm_resource_group.wordpress-rg.name
 
