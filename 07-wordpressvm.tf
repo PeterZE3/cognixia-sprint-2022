@@ -1,7 +1,19 @@
 # Locals Block for custom data
-# locals {
-#   webvm_custom_data = <<CUSTOM_DATA{}
-# }
+locals {
+webvm_custom_data = <<CUSTOM_DATA
+!/bin/sh
+sudo yum install wget
+sudo mkdir -p /var/www/html
+cd /var/www/html
+sudo wget http://wordpress.org/latest.tar.gz
+sudo tar xzvf latest.tar.gz
+sudo rm latest.tar.gz
+sudo chown -R nginx: /var/www/html/wordpress
+cd wordpress
+sudo mv wp-config-sample.php wp-config.php
+sudo nano wp-config.php
+CUSTOM_DATA
+ }
 
 resource "azurerm_network_interface" "web_linuxvm_nic" {
   name = "wordpress-web-linuxvm-nic"
@@ -45,6 +57,6 @@ resource "azurerm_linux_virtual_machine" "web_linuxvm" {
     version = "latest"
   }
 
-  # custom_data = filebase64("${path.module}/app-scripts/redhat-webvm-script.sh")
-#   custom_data = base64encode(local.webvm_custom_data)
+#   custom_data = filebase64("${path.module}/app-scripts/redhat-webvm-script.sh")
+   custom_data = base64encode(local.webvm_custom_data)
 }
