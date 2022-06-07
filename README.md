@@ -5,7 +5,7 @@ Have working mysql server along with a working bastion host that has the capabil
 
 1) ssh -i ssh-keys/terraform-azure.pem azureuser@Bastion-Public-IP
 
- <b>  Connection to SQL Server: </br>
+ <b>  Connection to SQL Server: </b> </br>
  
 2) mysql -h [DATABASE-HOST-SERVER.COM] -u [dbadmin@MY-SQL-PUBLICIP] -p 
 
@@ -16,7 +16,7 @@ Have working mysql server along with a working bastion host that has the capabil
 
 DATABASE INFO</br>
 
-mysql_db_name = "mysql"
-mysql_db_username = "dbadmin"
-mysql_db_schema = "wordpressdb"
+mysql_db_name = "mysql" </br>
+mysql_db_username = "dbadmin" </br>
+mysql_db_schema = "wordpressdb" </br>
 mysql_db_password = "H@Sh1CoR3!"
