@@ -20,5 +20,5 @@ resource "azurerm_storage_container" "storagecontainer" {
 */
 resource "azurerm_storage_queue" "queue" {
   name                 = "messages"
-
+  storage_account_name = azurerm_storage_account.storage2022sprint.name
 }
