@@ -14,7 +14,7 @@ Have working mysql server along with a working bastion host that has the capabil
 
 
 
-DATABASE INFO</br>
+<b> DATABASE INFO </b> </br>
 
 mysql_db_name = "mysql" </br>
 mysql_db_username = "dbadmin" </br>
