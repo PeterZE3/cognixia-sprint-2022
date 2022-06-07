@@ -7,6 +7,6 @@ Have working mysql server along with a working bastion host that has the capabil
 
  <b>  Connection to SQL Server: </br>
  
-2) mysql -h ???hr-dev-mysql.mysql.database.azure.com??? -u ???dbadmin@hr-dev-mysql??? -p 
+2) mysql -h [[[hr-dev-mysql.mysql.database.azure.com]]] -u [[[dbadmin@hr-dev-mysql]]] -p 
 
 3) mysql_db_password = "H@Sh1CoR3!"
