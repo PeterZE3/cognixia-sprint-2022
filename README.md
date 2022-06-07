@@ -10,3 +10,13 @@ Have working mysql server along with a working bastion host that has the capabil
 2) mysql -h [DATABASE-HOST-SERVER.COM] -u [dbadmin@MY-SQL-PUBLICIP] -p 
 
 3) mysql_db_password = "H@Sh1CoR3!"
+
+
+
+
+DATABASE INFO</br>
+
+mysql_db_name = "mysql"
+mysql_db_username = "dbadmin"
+mysql_db_schema = "wordpressdb"
+mysql_db_password = "H@Sh1CoR3!"
