@@ -4,27 +4,24 @@ variable "environment" {
   type = string
   default = "dev"
 }
-# WORDPRESS Resource Group Name 
-variable "rg1" {
+
+# Azure Resource Group Name 
+variable "resource_group_name" {
   description = "Resource Group Name"
   type = string
-  default = "wordpress"  
+  default = "rg-wordpress"  
 }
-# # MySQL Resource Group Name 
-variable "rg2" {
-  description = "Resource Group Name"
-  type = string
-  default = "mysql"  
-}
-# # STORAGE ACCOUNT Resource Group Name 
-variable "rg3" {
-  description = "Resource Group Name"
-  type = string
-  default = "stgacct"  
-}
-# Resources Location
-variable "rglocation" {
+
+# Azure Resources Location
+variable "resource_group_location" {
   description = "Region in which Azure Resources to be created"
   type = string
   default = "centralus"  
+}
+
+# Web Subnet Address Space
+variable "web_subnet_address" {
+  description = "Virtual Network Web Subnet Address Spaces"
+  type = list(string)
+  default = ["10.0.1.0/24"]
 }
