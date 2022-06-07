@@ -5,7 +5,7 @@ Have working mysql server along with a working bastion host that has the capabil
 
 1) ssh -i ssh-keys/terraform-azure.pem azureuser@<Bastion-Public-IP>
 
-Connection to SQL Server:
+ <b>  Connection to SQL Server: </br>
  
 2) mysql -h hr-dev-mysql.mysql.database.azure.com -u dbadmin@hr-dev-mysql -p 
 
