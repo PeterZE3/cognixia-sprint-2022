@@ -60,8 +60,8 @@ resource "azurerm_linux_virtual_machine" "web_linuxvm" {
   size = "Standard_B1s"
 
   admin_username = "azureuser"
-#   admin_password = "Password1234"
-#   disable_password_authentication = false
+  # admin_password = "Password1234"
+  # disable_password_authentication = false
 
   admin_ssh_key {
     username = "azureuser"

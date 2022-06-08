@@ -73,22 +73,24 @@ resource "azurerm_mysql_firewall_rule" "mysql_fw_rule" {
   end_ip_address      = azurerm_public_ip.bastion_host_publicip.ip_address
 }
 
+
+
 # Resource-3-2: Azure MySQL Firewall Rule - Allow access from WordPress IP
 # This would either be access from the wordpress vm or the loadbalancer
-# resource "azurerm_mysql_firewall_rule" "mysql_fw_rule" { ##!!!!!!!!! NEED WORDPRESS IP!!!!!!!!
-#   name                = "allow-access-from-wordpressvm-publicip"
-#   resource_group_name = azurerm_resource_group.default.name
-#   server_name         = azurerm_mysql_server.mysql_server.name
-#   start_ip_address    = azurerm_public_ip.default.ip_address ##!!!!!!!!! NEED WORDPRESS IP!!!!!!!!
-#   end_ip_address      = azurerm_public_ip.default.ip_address ##!!!!!!!!! NEED WORDPRESS IP!!!!!!!!
-# }
+resource "azurerm_mysql_firewall_rule" "mysql_fw_rule1" { ##!!!!!!!!! NEED WORDPRESS IP!!!!!!!!
+  name                = "allow-access-from-wordpressvm-publicip1"
+  resource_group_name = azurerm_resource_group.wordpress-rg.name
+  server_name         = azurerm_mysql_server.mysql_server.name
+  start_ip_address    = azurerm_public_ip.web_linuxvm_publicip.ip_address ##!!!!!!!!! NEED WORDPRESS IP!!!!!!!!
+  end_ip_address      = azurerm_public_ip.web_linuxvm_publicip.ip_address ##!!!!!!!!! NEED WORDPRESS IP!!!!!!!!
+}
 
 # Resource-4: Azure MySQL Virtual Network Rule ##This will allow for the server to accept communications from other subnets
 resource "azurerm_mysql_virtual_network_rule" "mysql_virtual_network_rule" { 
   name                = "mysql-vnet-rule"
   resource_group_name = azurerm_resource_group.wordpress-rg.name 
   server_name         = azurerm_mysql_server.mysql_server.name 
-  subnet_id           = azurerm_subnet.subnet1.id 
+  subnet_id           = azurerm_subnet.subnet2.id 
 }
 
 #################################################################################

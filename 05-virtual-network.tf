@@ -18,13 +18,13 @@ resource "azurerm_virtual_network" "vnet" {
 }
 
 // Manages the Subnet
-resource "azurerm_subnet" "subnet1" {
-  name                 = "subnet-${random_string.name.result}"
-  resource_group_name  = azurerm_resource_group.wordpress-rg.name
-  virtual_network_name = azurerm_virtual_network.vnet.name
-  address_prefixes     = ["10.0.1.0/24"]
-  service_endpoints    = ["Microsoft.Sql"]
-}
+# resource "azurerm_subnet" "subnet1" {
+#   name                 = "subnet-${random_string.name.result}"
+#   resource_group_name  = azurerm_resource_group.wordpress-rg.name
+#   virtual_network_name = azurerm_virtual_network.vnet.name
+#   address_prefixes     = ["10.0.1.0/24"]
+#   service_endpoints    = ["Microsoft.Sql"]
+# }
 
 // Manages the Subnet
 resource "azurerm_subnet" "subnet2" {
@@ -35,21 +35,22 @@ resource "azurerm_subnet" "subnet2" {
   service_endpoints    = ["Microsoft.Sql"]
 }
 
+# Create NSG
+resource "azurerm_network_security_group" "subnet_nsg2" {
+  name                = "wordpressvm-subnet-nsg"
+  location            = azurerm_resource_group.wordpress-rg.location
+  resource_group_name = azurerm_resource_group.wordpress-rg.name
+}
 
-
-
-
-
-
-
-
-
-
-
-
+# Associate NSG and Subnet
+resource "azurerm_subnet_network_security_group_association" "subnet_nsg_associate2" {
+  depends_on                = [azurerm_network_security_rule.nsg_rule_inbound2]
+  subnet_id                 = azurerm_subnet.subnet2.id
+  network_security_group_id = azurerm_network_security_group.subnet_nsg2.id
+}
 
   ## Locals Block for Security Rules
-/*locals {
+locals {
   web_inbound_ports_map = {
     "100" : "80", # If the key starts with a number, you must use the colon syntax ":" instead of "="
     "110" : "443",
@@ -57,7 +58,7 @@ resource "azurerm_subnet" "subnet2" {
   } 
 }
 ## NSG Inbound Rule for WebTier Subnets
-resource "azurerm_network_security_rule" "web_nsg_rule_inbound" {
+resource "azurerm_network_security_rule" "nsg_rule_inbound2" {
   for_each = local.web_inbound_ports_map
   name                        = "Rule-Port-${each.value}"
   priority                    = each.key
@@ -68,6 +69,6 @@ resource "azurerm_network_security_rule" "web_nsg_rule_inbound" {
   destination_port_range      = each.value 
   source_address_prefix       = "*"
   destination_address_prefix  = "*"
-  resource_group_name         = azurerm_resource_group.rg.name
-  network_security_group_name = azurerm_network_security_group.web_subnet_nsg.name
-}*/
+  resource_group_name         = azurerm_resource_group.wordpress-rg.name
+  network_security_group_name = azurerm_network_security_group.subnet_nsg2.name
+}
