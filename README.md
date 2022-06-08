@@ -21,3 +21,26 @@ mysql_db_name = "mysql" </br>
 mysql_db_username = "dbadmin" </br>
 mysql_db_schema = "wordpressdb" </br>
 mysql_db_password = "H@Sh1CoR3!"
+
+
+# Deliverables
+
+URL for the Wordpress website
+
+http://app1-vm.centralus.cloudapp.azure.com/wordpress/
+
+Github repository with all the code and manifest files.
+
+https://github.com/PeterZE3/cognixia-sprint-2022
+
+A screenshot of JIRA roadmap.
+
+![image](https://user-images.githubusercontent.com/103215360/172719244-b9681d24-4cde-4736-b280-995b84be2fce.png)
+
+Recording of the Sprint demo where each developer will demo what he/she worked on during the Sprint.
+
+https://youtu.be/l3ktv9Uc7vU
+
+Recording of the retrospective meeting at the end of the sprint.
+
+https://youtu.be/qpe1IMTeaT0
