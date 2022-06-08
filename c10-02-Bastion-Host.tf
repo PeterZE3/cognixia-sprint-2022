@@ -22,7 +22,6 @@ java -jar /home/azureuser/app3-usermgmt/usermgmt-webapp.war > /home/azureuser/ap
 CUSTOM_DATA  
 }
 
-
 # Create Public IP Address
 resource "azurerm_public_ip" "bastion_host_publicip" {
   name                = "bastion-host-publicip"
