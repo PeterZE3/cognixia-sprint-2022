@@ -38,7 +38,7 @@ resource "azurerm_lb_nat_rule" "nat_rules" {
   loadbalancer_id                = azurerm_lb.load_balancer.id
   name                           = "NAT_connection_rules"
   protocol                       = "Tcp"
-  frontend_port                  = 8080
+  frontend_port                  = 80
   backend_port                   = 80
   frontend_ip_configuration_name = azurerm_lb.load_balancer.frontend_ip_configuration[0]
 }
