@@ -1,7 +1,36 @@
 # Locals Block for custom data
 locals {
 webvm_custom_data = <<CUSTOM_DATA
-#!/bin/sh
+!/bin/sh
+
+#sudo yum update -y
+# Stop Firewall and Disable it
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+
+# NGINX INSTALL
+sudo apt install nginx
+sudo systemctl start nginx
+sudo ufw allow ‘Nginx HTTP’
+
+# INSTALL PHP
+sudo systemctl enable php-fpm
+sudo systemctl start php-fpm
+
+# JAVA AND MYSQL INSTALL 
+sudo apt-get -y install java-11-openjdk
+sudo apt-get -y install telnet
+sudo apt-get -y install mysql-client-core-5.7
+mkdir /home/azureuser/app3-usermgmt && cd /home/azureuser/app3-usermgmt
+wget https://github.com/stacksimplify/temp1/releases/download/1.0.0/usermgmt-webapp.war -P /home/azureuser/app3-usermgmt 
+export DB_HOSTNAME=${azurerm_mysql_server.mysql_server.fqdn}
+export DB_PORT=3306
+export DB_NAME=${azurerm_mysql_database.wordpressdb.name}
+export DB_USERNAME="${azurerm_mysql_server.mysql_server.administrator_login}@${azurerm_mysql_server.mysql_server.fqdn}"
+export DB_PASSWORD=${azurerm_mysql_server.mysql_server.administrator_login_password}
+java -jar /home/azureuser/app3-usermgmt/usermgmt-webapp.war > /home/azureuser/app3-usermgmt/ums-start.log &
+
+
 sudo apt-get install wget
 sudo mkdir -p /var/www/html
 cd /var/www/html
