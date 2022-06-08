@@ -1,0 +1,498 @@
+                                                [
+  {
+    "offer": "wordpress-on-ubuntu-1804",
+    "publisher": "apps-4-rent",
+    "sku": "wordpress-on-ubuntu-1804",
+    "urn": "apps-4-rent:wordpress-on-ubuntu-1804:wordpress-on-ubuntu-1804:1.0.1",
+    "version": "1.0.1"
+  },
+  {
+    "offer": "wordpress-windows-server-2016",
+    "publisher": "apps-4-rent",
+    "sku": "wordpress-windows-server-2016-v1",
+    "urn": "apps-4-rent:wordpress-windows-server-2016:wordpress-windows-server-2016-v1:1.0.2",
+    "version": "1.0.2"
+  },
+  {
+    "offer": "wordpress-windows-server-2019",
+    "publisher": "apps-4-rent",
+    "sku": "wordpress-windows-server-2019-v1",
+    "urn": "apps-4-rent:wordpress-windows-server-2019:wordpress-windows-server-2019-v1:1.0.2",
+    "version": "1.0.2"
+  },
+  {
+    "offer": "wordpress",
+    "publisher": "athinfosystems1641442221349",
+    "sku": "wordpress",
+    "urn": "athinfosystems1641442221349:wordpress:wordpress:1.0.1",
+    "version": "1.0.1"
+  },
+  {
+    "offer": "wordpress",
+    "publisher": "Bitnami",
+    "sku": "4-4",
+    "urn": "Bitnami:wordpress:4-4:5.9.2112522549",
+    "version": "5.9.2112522549"
+  },
+  {
+    "offer": "wordpress-frontend-database-multitier-image",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpress-frontend-database-multitier-image:default:5.9.2112509983",
+    "version": "5.9.2112509983"
+  },
+  {
+    "offer": "wordpress-frontend-database-multitier-image",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpress-frontend-database-multitier-image:default:5.9.2112517805",
+    "version": "5.9.2112517805"
+  },
+  {
+    "offer": "wordpress-frontend-database-multitier-image",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpress-frontend-database-multitier-image:default:5.9.2112522572",
+    "version": "5.9.2112522572"
+  },
+  {
+    "offer": "wordpress-frontend-manageddb-multitier-image",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpress-frontend-manageddb-multitier-image:default:5.9.2112509979",
+    "version": "5.9.2112509979"
+  },
+  {
+    "offer": "wordpress-frontend-manageddb-multitier-image",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpress-frontend-manageddb-multitier-image:default:5.9.2112517804",
+    "version": "5.9.2112517804"
+  },
+  {
+    "offer": "wordpress-frontend-manageddb-multitier-image",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpress-frontend-manageddb-multitier-image:default:5.9.2112522565",
+    "version": "5.9.2112522565"
+  },
+  {
+    "offer": "wordpress-intel",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpress-intel:default:5.9.2112523213",
+    "version": "5.9.2112523213"
+  },
+  {
+    "offer": "wordpress-multisite",
+    "publisher": "Bitnami",
+    "sku": "4",
+    "urn": "Bitnami:wordpress-multisite:4:5.9.2112522550",
+    "version": "5.9.2112522550"
+  },
+  {
+    "offer": "wordpresspro",
+    "publisher": "Bitnami",
+    "sku": "default",
+    "urn": "Bitnami:wordpresspro:default:5.9.2112523212",
+    "version": "5.9.2112523212"
+  },
+  {
+    "offer": "wordpress-ubuntu-18-04",
+    "publisher": "cloud-infrastructure-services",
+    "sku": "wordpress-ubuntu-18-04",
+    "urn": "cloud-infrastructure-services:wordpress-ubuntu-18-04:wordpress-ubuntu-18-04:0.0.1",
+    "version": "0.0.1"
+  },
+  {
+    "offer": "wordpress-ubuntu-20-04",
+    "publisher": "cloud-infrastructure-services",
+    "sku": "wordpress-ubuntu-20-04",
+    "urn": "cloud-infrastructure-services:wordpress-ubuntu-20-04:wordpress-ubuntu-20-04:0.0.2",
+    "version": "0.0.2"
+  },
+  {
+    "offer": "wordpress-windows-2016",
+    "publisher": "cloud-infrastructure-services",
+    "sku": "wordpress-windows-2016",
+    "urn": "cloud-infrastructure-services:wordpress-windows-2016:wordpress-windows-2016:0.0.5",
+    "version": "0.0.5"
+  },
+  {
+    "offer": "wordpress-with-ubuntu-20-04-lts-cm",
+    "publisher": "cloudmavensolutions",
+    "sku": "wordpress-on-ubuntu-20-04-lts-cm",
+    "urn": "cloudmavensolutions:wordpress-with-ubuntu-20-04-lts-cm:wordpress-on-ubuntu-20-04-lts-cm:1.2020.1010",
+    "version": "1.2020.1010"
+  },
+  {
+    "offer": "wordpress-with-centos-7-6-cw",
+    "publisher": "cloudwhizsolutions",
+    "sku": "wordpress-with-centos-76-cw",
+    "urn": "cloudwhizsolutions:wordpress-with-centos-7-6-cw:wordpress-with-centos-76-cw:1.2019.1008",
+    "version": "1.2019.1008"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2016-cm",
+    "publisher": "cloudmavensolutions",
+    "sku": "wordpress-with-windows-server-2016",
+    "urn": "cloudmavensolutions:wordpress-with-windows-server-2016-cm:wordpress-with-windows-server-2016:1.2020.1010",
+    "version": "1.2020.1010"
+  },
+  {
+    "offer": "wordpress-windows-2019",
+    "publisher": "cloud-infrastructure-services",
+    "sku": "wordpress-windows-2019",
+    "urn": "cloud-infrastructure-services:wordpress-windows-2019:wordpress-windows-2019:0.0.4",
+    "version": "0.0.4"
+  },
+  {
+    "offer": "wordpress-windows-2019",
+    "publisher": "cloud-infrastructure-services",
+    "sku": "wordpress-windows-2019",
+    "urn": "cloud-infrastructure-services:wordpress-windows-2019:wordpress-windows-2019:0.0.5",
+    "version": "0.0.5"
+  },
+  {
+    "offer": "wordpress-with-centos-7-7-cw",
+    "publisher": "cloudwhizsolutions",
+    "sku": "wordpress-with-centos-77-cw",
+    "urn": "cloudwhizsolutions:wordpress-with-centos-7-7-cw:wordpress-with-centos-77-cw:22.04.09",
+    "version": "22.04.09"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2019-cm",
+    "publisher": "cloudmavensolutions",
+    "sku": "wordpress-with-windows-server-2019",
+    "urn": "cloudmavensolutions:wordpress-with-windows-server-2019-cm:wordpress-with-windows-server-2019:1.2020.1010",
+    "version": "1.2020.1010"
+  },
+  {
+    "offer": "sec1027-secured-wordpress-on-ubuntu-1404",
+    "publisher": "cognosys",
+    "sku": "sec1027-secured-wordpress-on-ubuntu-1404",
+    "urn": "cognosys:sec1027-secured-wordpress-on-ubuntu-1404:sec1027-secured-wordpress-on-ubuntu-1404:1.2.0",
+    "version": "1.2.0"
+  },
+  {
+    "offer": "sec1027-secured-wordpress-on-ubuntu-1404",
+    "publisher": "cognosys",
+    "sku": "sec1027-secured-wordpress-on-ubuntu-1404",
+    "urn": "cognosys:sec1027-secured-wordpress-on-ubuntu-1404:sec1027-secured-wordpress-on-ubuntu-1404:22.03.21",
+    "version": "22.03.21"
+  },
+  {
+    "offer": "secured-wordpress-on-centos-7-3",
+    "publisher": "cognosys",
+    "sku": "new-secured-wordpress-on-centos-7-3",
+    "urn": "cognosys:secured-wordpress-on-centos-7-3:new-secured-wordpress-on-centos-7-3:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "secured-wordpress-on-ubuntu-16-04-lts",
+    "publisher": "cognosys",
+    "sku": "new-secured-wordpress-on-ubuntu-16-04-lts",
+    "urn": "cognosys:secured-wordpress-on-ubuntu-16-04-lts:new-secured-wordpress-on-ubuntu-16-04-lts:1.0.2",
+    "version": "1.0.2"
+  },
+  {
+    "offer": "secured-wordpress-on-ubuntu-18-04-lts",
+    "publisher": "cognosys",
+    "sku": "new-secured-wordpress-on-ubuntu-18-04-lts",
+    "urn": "cognosys:secured-wordpress-on-ubuntu-18-04-lts:new-secured-wordpress-on-ubuntu-18-04-lts:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "secured-wordpress-on-windows-2012-r2",
+    "publisher": "cognosys",
+    "sku": "secured-wordpress-on-windows-basic-lic",
+    "urn": "cognosys:secured-wordpress-on-windows-2012-r2:secured-wordpress-on-windows-basic-lic:1.3.0",
+    "version": "1.3.0"
+  },
+  {
+    "offer": "secured-wordpress-on-windows-2012-r2",
+    "publisher": "cognosys",
+    "sku": "secured-wordpress-on-windows-basic-lic",
+    "urn": "cognosys:secured-wordpress-on-windows-2012-r2:secured-wordpress-on-windows-basic-lic:1.3.1",
+    "version": "1.3.1"
+  },
+  {
+    "offer": "wordpress-with-almalinux-8",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-almalinux-8",
+    "urn": "cognosys:wordpress-with-almalinux-8:wordpress-with-almalinux-8:1.2019.1011",
+    "version": "1.2019.1011"
+  },
+  {
+    "offer": "wordpress-with-centos-7-8",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-7-8",
+    "urn": "cognosys:wordpress-with-centos-7-8:wordpress-with-centos-7-8:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-with-centos-7-9",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-7-9",
+    "urn": "cognosys:wordpress-with-centos-7-9:wordpress-with-centos-7-9:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "wordpress-with-centos-75",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-75",
+    "urn": "cognosys:wordpress-with-centos-75:wordpress-with-centos-75:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-with-centos-75-free",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-75-free",
+    "urn": "cognosys:wordpress-with-centos-75-free:wordpress-with-centos-75-free:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "wordpress-with-centos-76",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-76",
+    "urn": "cognosys:wordpress-with-centos-76:wordpress-with-centos-76:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-with-centos-76-free",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-76-free",
+    "urn": "cognosys:wordpress-with-centos-76-free:wordpress-with-centos-76-free:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "wordpress-with-centos-77",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-77",
+    "urn": "cognosys:wordpress-with-centos-77:wordpress-with-centos-77:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-with-centos-77-free",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-77-free",
+    "urn": "cognosys:wordpress-with-centos-77-free:wordpress-with-centos-77-free:1.2019.1008",
+    "version": "1.2019.1008"
+  },
+  {
+    "offer": "wordpress-with-centos-8-2",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-8-2",
+    "urn": "cognosys:wordpress-with-centos-8-2:wordpress-with-centos-8-2:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-with-centos-8-3",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-8-3",
+    "urn": "cognosys:wordpress-with-centos-8-3:wordpress-with-centos-8-3:22.03.28",
+    "version": "22.03.28"
+  },
+  {
+    "offer": "wordpress-with-centos-8-stream",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-centos-8-stream",
+    "urn": "cognosys:wordpress-with-centos-8-stream:wordpress-with-centos-8-stream:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-on-centos-8_5",
+    "publisher": "ebesllc1637780200500",
+    "sku": "wordpress-centos-8_5",
+    "urn": "ebesllc1637780200500:wordpress-on-centos-8_5:wordpress-centos-8_5:0.0.1",
+    "version": "0.0.1"
+  },
+  {
+    "offer": "wordpress-on-centos-8_5",
+    "publisher": "ebesllc1637780200500",
+    "sku": "wordpress_centos8_5",
+    "urn": "ebesllc1637780200500:wordpress-on-centos-8_5:wordpress_centos8_5:0.0.1",
+    "version": "0.0.1"
+  },
+  {
+    "offer": "wordpress-with-debian-10",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-debian-10",
+    "urn": "cognosys:wordpress-with-debian-10:wordpress-with-debian-10:1.2019.1011",
+    "version": "1.2019.1011"
+  },
+  {
+    "offer": "wordpress-with-redhat-7-9",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-redhat-7-9",
+    "urn": "cognosys:wordpress-with-redhat-7-9:wordpress-with-redhat-7-9:22.04.02",
+    "version": "22.04.02"
+  },
+  {
+    "offer": "wordpress-with-redhat-8",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-redhat-8",
+    "urn": "cognosys:wordpress-with-redhat-8:wordpress-with-redhat-8:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-with-ubuntu-18-04-lts",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-ubuntu-18-04-lts",
+    "urn": "cognosys:wordpress-with-ubuntu-18-04-lts:wordpress-with-ubuntu-18-04-lts:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "wordpress-with-ubuntu-20-04-lts",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-ubuntu-20-04-lts",
+    "urn": "cognosys:wordpress-with-ubuntu-20-04-lts:wordpress-with-ubuntu-20-04-lts:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "wordpress-with-ubuntu-server-1604-lts",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-ubuntu-server-1604-lts",
+    "urn": "cognosys:wordpress-with-ubuntu-server-1604-lts:wordpress-with-ubuntu-server-1604-lts:22.04.06",
+    "version": "22.04.06"
+  },
+  {
+    "offer": "wordpress-with-ubuntu-server-1604-lts-free",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-ubuntu-server-1604-lts-free",
+    "urn": "cognosys:wordpress-with-ubuntu-server-1604-lts-free:wordpress-with-ubuntu-server-1604-lts-free:22.03.29",
+    "version": "22.03.29"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2016",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2016-free",
+    "urn": "cognosys:wordpress-with-windows-server-2016:wordpress-with-windows-server-2016-free:1.2019.1010",
+    "version": "1.2019.1010"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2016-v1",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2016-v1",
+    "urn": "cognosys:wordpress-with-windows-server-2016-v1:wordpress-with-windows-server-2016-v1:1.2019.1010",
+    "version": "1.2019.1010"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2016-v1",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2016-v1",
+    "urn": "cognosys:wordpress-with-windows-server-2016-v1:wordpress-with-windows-server-2016-v1:1.2019.1011",
+    "version": "1.2019.1011"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2019",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2019-free",
+    "urn": "cognosys:wordpress-with-windows-server-2019:wordpress-with-windows-server-2019-free:1.2019.1010",
+    "version": "1.2019.1010"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2019-v1",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2019-v1",
+    "urn": "cognosys:wordpress-with-windows-server-2019-v1:wordpress-with-windows-server-2019-v1:1.2020.1011",
+    "version": "1.2020.1011"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2019-v1",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2019-v1",
+    "urn": "cognosys:wordpress-with-windows-server-2019-v1:wordpress-with-windows-server-2019-v1:1.2020.1012",
+    "version": "1.2020.1012"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2019-v1",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2019-v1",
+    "urn": "cognosys:wordpress-with-windows-server-2019-v1:wordpress-with-windows-server-2019-v1:22.03.02",
+    "version": "22.03.02"
+  },
+  {
+    "offer": "wordpress-with-windows-server-2022",
+    "publisher": "cognosys",
+    "sku": "wordpress-with-windows-server-2022",
+    "urn": "cognosys:wordpress-with-windows-server-2022:wordpress-with-windows-server-2022:0.0.1",
+    "version": "0.0.1"
+  },
+  {
+    "offer": "wordpress4_lemp7",
+    "publisher": "jetware-srl",
+    "sku": "wordpress4_lemp7-170526-centos-7",
+    "urn": "jetware-srl:wordpress4_lemp7:wordpress4_lemp7-170526-centos-7:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "offer": "wordpress4_lemp7",
+    "publisher": "jetware-srl",
+    "sku": "wordpress4_lemp7-170526-ubuntu-1604",
+    "urn": "jetware-srl:wordpress4_lemp7:wordpress4_lemp7-170526-ubuntu-1604:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "offer": "openlitespeed-wordpress",
+    "publisher": "litespeed_technologies",
+    "sku": "wordpress",
+    "urn": "litespeed_technologies:openlitespeed-wordpress:wordpress:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "offer": "openlitespeed-wordpress",
+    "publisher": "litespeedtechnologies",
+    "sku": "wordpress",
+    "urn": "litespeedtechnologies:openlitespeed-wordpress:wordpress:3.0.2",
+    "version": "3.0.2"
+  },
+  {
+    "offer": "linnovate-wordpress",
+    "publisher": "meanio",
+    "sku": "wordpress-enterprise-ready",
+    "urn": "meanio:linnovate-wordpress:wordpress-enterprise-ready:1.0.2",
+    "version": "1.0.2"
+  },
+  {
+    "offer": "wordpress-5-7_09-04-2021",
+    "publisher": "nilespartnersinc1617691698386",
+    "sku": "wordpress",
+    "urn": "nilespartnersinc1617691698386:wordpress-5-7_09-04-2021:wordpress:1.1.1",
+    "version": "1.1.1"
+  },
+  {
+    "offer": "solution-server-wordpress",
+    "publisher": "plesk",
+    "sku": "plsk-cent-pro-sol-azr-m",
+    "urn": "plesk:solution-server-wordpress:plsk-cent-pro-sol-azr-m:18.0.41",
+    "version": "18.0.41"
+  },
+  {
+    "offer": "wordpress-ubuntu-20-04-1",
+    "publisher": "solvedevops1643693563360",
+    "sku": "wordpress-plan",
+    "urn": "solvedevops1643693563360:wordpress-ubuntu-20-04-1:wordpress-plan:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "offer": "wordpress",
+    "publisher": "vmlabinc1613642184700",
+    "sku": "wordpress-lamp-centos",
+    "urn": "vmlabinc1613642184700:wordpress:wordpress-lamp-centos:5.9.0",
+    "version": "5.9.0"
+  },
+  {
+    "offer": "wordpress",
+    "publisher": "vmlabinc1613642184700",
+    "sku": "wordpress-lemp-centos",
+    "urn": "vmlabinc1613642184700:wordpress:wordpress-lemp-centos:5.9.0",
+    "version": "5.9.0"
+  },
+  {
+    "offer": "wordpress_on_xampp_windows",
+    "publisher": "yaseensmarket1645449809728",
+    "sku": "windows_server_2022",
+    "urn": "yaseensmarket1645449809728:wordpress_on_xampp_windows:windows_server_2022:5.9.1",
+    "version": "5.9.1"
+  }
