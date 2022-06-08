@@ -1,6 +1,6 @@
 # Locals Block for custom data
 locals {
-webvm_custom_data = <<CUSTOM_DATA
+bastionvm_custom_data = <<CUSTOM_DATA
 #!/bin/sh
 #sudo yum update -y
 # Stop Firewall and Disable it
@@ -69,7 +69,7 @@ resource "azurerm_linux_virtual_machine" "bastion_host_vm" {
     version   = "latest"
   }
   # custom_data = filebase64("${path.module}/app-scripts/redhat-webvm-script.sh")
-  custom_data = base64encode(local.webvm_custom_data) 
+  custom_data = base64encode(local.bastionvm_custom_data) 
 }
 
 
