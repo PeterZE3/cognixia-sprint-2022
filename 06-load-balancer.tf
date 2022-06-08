@@ -66,6 +66,15 @@ resource "azurerm_lb_rule" "lb_rule" {
   load_distribution              = "Default"
 }
 
+resource "azurerm_lb_rule" "lb_rule2" {
+  loadbalancer_id                = azurerm_lb.load_balancer.id
+  name                           = "LoadBalancerRule2"
+  protocol                       = "Tcp"
+  frontend_port                  = 22
+  backend_port                   = 22
+  frontend_ip_configuration_name = azurerm_lb.load_balancer.frontend_ip_configuration[0]
+  load_distribution              = "Default"
+}
 // health probe setup
 resource "azurerm_lb_probe" "health_probe" {
   loadbalancer_id = azurerm_lb.load_balancer.id
