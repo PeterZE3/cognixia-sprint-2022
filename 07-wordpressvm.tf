@@ -1,8 +1,8 @@
 # Locals Block for custom data
 locals {
 webvm_custom_data = <<CUSTOM_DATA
-!/bin/sh
-sudo yum install wget
+#!/bin/sh
+sudo apt-get install wget
 sudo mkdir -p /var/www/html
 cd /var/www/html
 sudo wget http://wordpress.org/latest.tar.gz
@@ -45,7 +45,7 @@ resource "azurerm_network_interface" "web_linuxvm_nic" {
   ip_configuration {
     name                          = "web-linuxvm-ip-1"
     private_ip_address_allocation = "Dynamic"
-    subnet_id = azurerm_subnet.websubnet.id
+    subnet_id = azurerm_subnet.subnet2.id
     public_ip_address_id = azurerm_public_ip.web_linuxvm_publicip.id 
   }
 }
