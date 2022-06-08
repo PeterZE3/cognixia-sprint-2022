@@ -15,6 +15,7 @@ resource "azurerm_lb" "load_balancer" {
   frontend_ip_configuration {
     name                 = "PublicIPAddress"
     public_ip_address_id = azurerm_public_ip.ipAddr.id
+    subnet_id = azurerm_subnet.websubnet.id
   }
 }
 
@@ -26,7 +27,7 @@ resource "azurerm_lb_backend_address_pool" "backend_address_pool" {
 
 resource "azurerm_lb_backend_address_pool_address" "backend_address_pool_address" {
   name                    = "backendPoolAddresses"
-  backend_address_pool_id = azurerm_lb.load_balancer.id
+  backend_address_pool_id = azurerm_lb_backend_address_pool.backend_address_pool.id
   //need the vnet setup for the virtual_network_id
   virtual_network_id = azurerm_virtual_network.vnet.id
   ip_address         = "10.0.0.1"
@@ -40,7 +41,7 @@ resource "azurerm_lb_nat_rule" "nat_rules" {
   protocol                       = "Tcp"
   frontend_port                  = 80
   backend_port                   = 80
-  frontend_ip_configuration_name = azurerm_lb.load_balancer.frontend_ip_configuration[0]
+  frontend_ip_configuration_name = "Nat Rule 1"
 }
 
 //outbound rules for the load balancer
@@ -51,7 +52,7 @@ resource "azurerm_lb_outbound_rule" "outbound_rules" {
   backend_address_pool_id = azurerm_lb_backend_address_pool.backend_address_pool.id
 
   frontend_ip_configuration {
-    name = azurerm_lb.load_balancer.frontend_ip_configuration[0]
+    name = "Outbound rule 1"
   }
 }
 
@@ -62,10 +63,19 @@ resource "azurerm_lb_rule" "lb_rule" {
   protocol                       = "Tcp"
   frontend_port                  = 80
   backend_port                   = 80
-  frontend_ip_configuration_name = azurerm_lb.load_balancer.frontend_ip_configuration[0]
+  frontend_ip_configuration_name = "Load_Balancer_frontend_ip_configuration_name"
   load_distribution              = "Default"
 }
 
+resource "azurerm_lb_rule" "lb_rule2" {
+  loadbalancer_id                = azurerm_lb.load_balancer.id
+  name                           = "LoadBalancerRule2"
+  protocol                       = "Tcp"
+  frontend_port                  = 22
+  backend_port                   = 22
+  frontend_ip_configuration_name = "Load_balancer_frontend_ip_configuration_name"
+  load_distribution              = "Default"
+}
 // health probe setup
 resource "azurerm_lb_probe" "health_probe" {
   loadbalancer_id = azurerm_lb.load_balancer.id
